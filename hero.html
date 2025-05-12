@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unlimited Plan</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <style>
+    :root {
+      --primary-color: #4a6bff;
+      --secondary-color: #2c3e50;
+      --accent-color: #00c9a7;
+      --light-bg: #f5f7fc;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #333;
+      line-height: 1.6;
+    }
+
+
+    .hero {
+      background: #f5f7fc;
+      padding: 4rem 0;
+    }
+
+    .hero-title {
+      font-size: 2.8rem;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero-title .unlimited {
+      background: linear-gradient(to right, #FF4907, #FFDD55);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      display: inline-block;
+
+    }
+
+    .hero-subtitle {
+      font-size: 1.2rem;
+      color: #666;
+      margin-bottom: 2rem;
+      max-width: 600px;
+    }
+
+    .btn-primary {
+      background-color: var(--primary-color);
+      border: none;
+      padding: 0.75rem 2rem;
+      font-weight: 600;
+      border-radius: 6px;
+      transition: all 0.3s;
+    }
+
+    .btn-primary:hover {
+      background-color: #3a5bef;
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(74, 107, 255, 0.3);
+    }
+
+    .seal-icon {
+      width: 20px;
+      height: 20px;
+      margin-right: 10px;
+      vertical-align: middle;
+    }
+
+
+
+    .feature-list {
+      margin: 2rem 0;
+    }
+
+    .feature-title {
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--secondary-color);
+      margin-bottom: 0.8rem;
+      display: flex;
+      align-items: center;
+    }
+
+    .feature-title i {
+      color: var(--primary-color);
+      margin-right: 10px;
+      font-size: 1.2rem;
+    }
+
+    .media-count {
+/*       border: #e3e3e3 solid; */
+      border-radius: 5px;
+      padding-top: 20px;
+      width: 100%;
+      height: 60px;
+    }
+
+    .count-number {
+      text-align: right;
+      font-size: 2rem;
+      font-weight: 700;
+      float: right;
+    }
+
+    .count-number::after {
+      content: "▼";
+      color: #666;
+      font-size: 12px;
+    }
+
+    .price-section {
+      text-align: left;
+      margin: 1.5rem 0;
+    }
+
+    .price-section h4 {
+      font-size: 1rem;
+      color: #666;
+      margin-bottom: 0.5rem;
+    }
+
+    .checkmark {
+      margin-left: 8px;
+      font-weight: bold;
+    }
+
+    .free-plan {
+      text-align: center;
+      margin-top: 1rem;
+      color: #666;
+      font-size: 0.9rem;
+    }
+
+    .free-plan a {
+      color: var(--primary-color);
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .free-plan a:hover {
+      text-decoration: underline;
+    }
+
+    .plan-card {
+      background: white;
+      border-radius: 25px;
+      padding: 2rem;
+      box-shadow: 0 5px 20px rgba(200, 31, 31, 0.05);
+      border: 1px solid #eee;
+    }
+
+    .plan-title {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: var(--secondary-color);
+      margin-bottom: 1rem;
+    }
+
+    .plan-price {
+      font-size: 1.2rem;
+      margin: 1rem 0;
+      line-height: 1;
+    }
+
+    .divider {
+      height: 1px;
+      background: #eee;
+      margin: 1.5rem 0;
+    }
+
+    .free-plan {
+      text-align: center;
+      margin-top: 1.5rem;
+      color: #666;
+      font-size: 0.9rem;
+    }
+
+    .free-plan a {
+      color: var(--primary-color);
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+
+    @media (max-width: 768px) {
+      .hero {
+        padding: 2rem 0;
+      }
+
+      .hero-title {
+        font-size: 1.5rem;
+      }
+
+      .plan- {
+        font-size: 2.5rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Hero Section -->
+  <div class="hero">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-7 mt-0">
+          <h1 class="hero-title">Try our <span class="unlimited">Unlimited Plan</span> today!</h1>
+          <p class="hero-subtitle">Dive into immersive visuals with our top-of-the-line video player. Don't just
+            watch experience every scene in stunning detail. Purchase now and elevate your home entertainment</p>
+
+
+          <div class="row feature-list">
+            <div class="col-md-6">
+              <h3 class="feature-title"><img src="assets/seal.svg" class="seal-icon" alt="check"> Unlimited videos &
+                audio</h3>
+              <h3 class="feature-title"><img src="assets/seal.svg" class="seal-icon" alt="check"> Unlimited storage
+                space</h3>
+              <h3 class="feature-title"><img src="assets/seal.svg" class="seal-icon" alt="check"> Podcast hosting</h3>
+            </div>
+            <div class="col-md-6">
+              <h3 class="feature-title"><img src="assets/seal.svg" class="seal-icon" alt="check"> Unlimited recording
+              </h3>
+              <h3 class="feature-title"><img src="assets/seal.svg" class="seal-icon" alt="check"> Editing studio</h3>
+              <h3 class="feature-title"><img src="assets/seal.svg" class="seal-icon" alt="check"> Rich video analytics
+              </h3>
+            </div>
+          </div>
+          <button class="btn btn-primary pt-3">See All Plans <span style="font-size:15px;"> ↗ </span></button>
+        </div>
+
+        <!-- <div class="divider"></div> -->
+
+        <div class="col-lg-4 ml-4">
+          <div class="plan-card position-relative">
+            
+            <!-- <div class="divider"></div> -->
+            <div>
+              <span class="plan-title"> Unlimited Plan </span> <span class="month" style="float: right;">
+                month year
+              </span>
+            </div>
+            <p>Navigate effortlessly with an intuitive and easy-to-use interface.</p>
+
+            <!-- <div class="divider"></div> -->
+
+            <div class="media-count">
+              <h5>Number of Videos & Media <span class="count-number">450 </span></h5>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="price-section">
+              <h4>Only For</h4>
+              <div class="plan-price">$69<span>/month</span></div>
+            </div>
+
+            <button class="btn btn-primary w-100 py-3">
+              Get Adilo Unlimited Now <span class="checkmark">✓</span>
+            </button>
+
+            <div class="free-plan">
+              <p>Try <a href="#">the free forever plan</a> - pay nothing for Adilo until you fall absolutely in love
+                with it.</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

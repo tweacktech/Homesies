@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adilo</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome for icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link href="style/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <section>
+    <nav class="navbar navbar-expand-lg bg-white sticky-top py-3">
+      <div class="container d-flex justify-content-between align-items-center">
+        <!-- Left: Logo -->
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <img src="assets/logo.png" alt="Logo">
+        </a>
+
+        <!-- Center: Toggler and Nav -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse center-nav justify-content-center" id="mainNav">
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Products</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Video Hosting</a></li>
+                <li><a class="dropdown-item" href="#">Analytics</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Solutions</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Marketing</a></li>
+                <li><a class="dropdown-item" href="#">Sales</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Resources</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Blog</a></li>
+                <li><a class="dropdown-item" href="#">Help Center</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Right: Auth Buttons -->
+        <div class="auth-buttons d-none d-lg-flex">
+          <a class="nav-link" href="#">Login</a>
+          <a class="btn btn-signup" href="#">Sign Up Free ↗</a>
+        </div>
+      </div>
+    </nav>
+  </section>
+  <!-- end of header  -->
+
+   <!-- Hero Section -->
+  <div class="hero">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-7 mt-0">
+          <h1 class="hero-title">Try our <span class="unlimited">Unlimited Plan</span> today!</h1>
+          <p class="hero-subtitle">Dive into immersive visuals with our top-of-the-line video player. Don't just
+            watch experience every scene in stunning detail. Purchase now and elevate your home entertainment</p>
+
+
+          <div class="row feature-list">
+            <div class="col-md-6">
+              <h3 class="feature-title"><img src="assets/seal.svg" class="seal-icon" alt="check"> Unlimited videos &
+                audio</h3>
+              <h3 class="feature-title"><img src="assets/seal.svg" class="seal-icon" alt="check"> Unlimited storage
+                space</h3>
+              <h3 class="feature-title"><img src="assets/seal.svg" class="seal-icon" alt="check"> Podcast hosting</h3>
+            </div>
+            <div class="col-md-6">
+              <h3 class="feature-title"><img src="assets/seal.svg" class="seal-icon" alt="check"> Unlimited recording
+              </h3>
+              <h3 class="feature-title"><img src="assets/seal.svg" class="seal-icon" alt="check"> Editing studio</h3>
+              <h3 class="feature-title"><img src="assets/seal.svg" class="seal-icon" alt="check"> Rich video analytics
+              </h3>
+            </div>
+          </div>
+          <button class="btn btn-primary pt-3">See All Plans <span style="font-size:15px;"> ↗ </span></button>
+        </div>
+
+        <!-- <div class="divider"></div> -->
+
+        <div class="col-lg-5">
+          <div class="plan-card position-relative">
+            <div>
+              <span class="plan-title"> Unlimited Plan </span> <span class="month" style="float: right;">
+                month year
+              </span>
+            </div>
+            <p>Navigate effortlessly with an intuitive and easy-to-use interface.</p>
+
+            <!-- <div class="divider"></div> -->
+
+            <div class="media-count">
+              <h4>Number of Videos & Media <span class="count-number">450 </span></h4>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="price-section">
+              <h4>Only For</h4>
+              <div class="plan-price">$69<span>/month</span></div>
+            </div>
+
+            <button class="btn btn-primary w-100 py-3">
+              Get Adilo Unlimited Now <span class="checkmark">✓</span>
+            </button>
+
+            <div class="free-plan">
+              <p>Try <a href="#">the free forever plan</a> - pay nothing for Adilo until you fall absolutely in love
+                with it.</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+ <!-- end of hero section  -->
+
+  <!-- blogs section  -->
+     <section class="blog border-top">
+        <div class="blog-header">
+            <div class="container">
+                <center>
+                    <h1 class="blog-title">Discover more from <span class="our-blog">Our Blog.</span> </h1>
+                    <p class="blog-subtitle">Read some of our featured blog posts to learn more about our video player.
+                        And
+                        stay tuned by subscribing for latest blog posts.</p>
+                </center>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row g-4">
+                <!-- Blog Post 1 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="blog-card">
+                        <img src="assets/featblog.png" class="card-img-top" alt="Mastering">
+                        <div class="card-body">
+                            <span class="card-category">Lectures . April 09, 2023</span>
+
+                            <h3 class="card-title">Top Features Of Our Video Editing Software</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog Post 2 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="blog-card">
+                        <img src="assets/featblog.png" class="card-img-top" alt="Mastering">
+                        <div class="card-body">
+                            <span class="card-category">Mastering . April 09, 2023</span>
+                            <h3 class="card-title">Mastering Video Editing With Our Software</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog Post 3 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="blog-card">
+                        <img src="assets/featblog.png" class="card-img-top" alt="Mastering">
+                        <div class="card-body">
+                            <span class="card-category">Level Up Skills .April 09, 2023</span>
+                            <h3 class="card-title">Level Up Your Video Editing Skills</h3>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog Post 4 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="blog-card">
+                        <img src="assets/featblog.png" class="card-img-top" alt="Mastering">
+                        <div class="card-body">
+                            <span class="card-category">Enhancement . Jan 09, 2025</span>
+                            <h3 class="card-title">10 Tips For Efficient And Effective Video Editing</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  <!--end of blogs section  -->
+
+
+  <!-- footer section -->
+  <footer class="pt-5 text-dark border-top mt-5">
+    <div class="container">
+      <div class="row">
+        <!-- Left: Newsletter and Info -->
+        <div class="col-lg-5 mb-4">
+          <div class="d-flex align-items-center mb-2">
+            <img src="assets/logo.png" alt="Logo" style="height: 32px; margin-right: 10px;">
+            <div>
+
+            </div>
+          </div>
+          <p class="text-muted">
+            Adilo is the premiere video, audio and podcast platform for businesses, organizations, educators and
+            creators.
+          </p>
+
+          <h6 class="footer-section-title">Newsletter</h6>
+          <p class="text-muted">
+            Be the first one to know about products, offers and events weekly in your mailbox. Unsubscribe whenever you
+            like with one click.
+          </p>
+
+          <form class="d-flex newsletter-input-group mb-3">
+            <span class="input-group-text px-3">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" fill="gray" class="bi bi-envelope" viewBox="0 0 16 16">
+                <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v.217l-8 4.8-8-4.8V4z" />
+                <path d="M0 5.383l8 4.8 8-4.8V12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V5.383z" />
+              </svg>
+            </span>
+            <input type="email" class="form-control" placeholder="Enter your email">
+            <button class="btn btn-primary px-4 rounded-0 rounded-end" type="submit">Submit</button>
+          </form>
+
+          <div class="d-flex align-items-center mt-3">
+            <div class="contact-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" fill="white" class="bi bi-envelope-fill"
+                viewBox="0 0 16 16">
+                <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555z" />
+                <path
+                  d="M0 4.697v7.104l5.803-3.803L0 4.697zM6.761 8.83l-6.43 4.224A2 2 0 0 0 2 14h12a2 2 0 0 0 1.67-.946l-6.43-4.224L8 9.586l-1.239-.757zM16 4.697l-5.803 3.801L16 11.801V4.697z" />
+              </svg>
+            </div>
+            <div class="ms-3">
+              <p class="mb-0 text-muted small">Contact us at</p>
+              <strong class="text-dark">hello@adilo.com</strong>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Products & Adilo For -->
+        <div class="col-lg-7 footer-divider ps-lg-5">
+          <div class="row">
+            <div class="col-md-6 mb-4">
+              <h6 class="footer-section-title">Products</h6>
+              <ul class="list-unstyled">
+                <li><a href="#" class="footer-link">Video Hosting</a></li>
+                <li><a href="#" class="footer-link">Audio Hosting</a></li>
+                <li><a href="#" class="footer-link">Podcast Hosting</a></li>
+                <li><a href="#" class="footer-link">Video Player</a></li>
+                <li><a href="#" class="footer-link">Video, Audio & Screen Recording</a></li>
+                <li><a href="#" class="footer-link">Snapbyte Studio</a></li>
+                <li><a href="#" class="footer-link">Teams & Collaborations</a></li>
+                <li><a href="#" class="footer-link">Advanced Video Security</a></li>
+                <li><a href="#" class="footer-link">Simulcast Livestreaming</a></li>
+                <li><a href="#" class="footer-link">Analytics</a></li>
+              </ul>
+            </div>
+
+            <div class="col-md-6 mb-4">
+              <h6 class="footer-section-title">Adilo For</h6>
+              <ul class="list-unstyled">
+                <li><a href="#" class="footer-link">Marketers</a></li>
+                <li><a href="#" class="footer-link">Online Course Creators</a></li>
+                <li><a href="#" class="footer-link">Filmmakers</a></li>
+                <li><a href="#" class="footer-link">Religious Institutions</a></li>
+                <li><a href="#" class="footer-link">Educators & Schools</a></li>
+                <li><a href="#" class="footer-link">Collecting Testimonials</a></li>
+                <li><a href="#" class="footer-link">E-Commerce</a></li>
+                <li><a href="#" class="footer-link">Corporate Communications</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Links -->
+      <div class="border-top mt-4 pt-3 pb-2">
+        <div class="container">
+          <!-- Top Row: Footer Links -->
+          <div class="footer-bottom-links d-flex flex-wrap justify-content-center justify-content-md-start gap-3 mb-3">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Disclaimer</a>
+            <a href="#">Fairuse Policy</a>
+            <a href="#">Refund Policy</a>
+            <a href="#">FAQ</a>
+            <a href="#">Customer Support</a>
+            <a href="#">Sitemap</a>
+          </div>
+
+          <!-- Bottom Row: Copyright + Social -->
+          <div class="d-md-flex justify-content-between align-items-center text-center text-md-start">
+            <div class="mb-2 small text-muted">
+              ©2024, BigCommand LLC. All Rights Reserved.
+            </div>
+            <div class="social-icons d-flex justify-content-center justify-content-md-end gap-3 mb-2">
+              <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook"></a>
+              <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" alt="Instagram"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    </div>
+  </footer>
+  <!-- end of footer  -->
+   
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

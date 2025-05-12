@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Centered Navbar</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .navbar {
+      box-shadow: 0 0 12px rgba(0, 0, 0, 0.03);
+    }
+
+    .navbar-brand img {
+      height: 32px;
+      margin-right: 8px;
+    }
+
+    .nav-link {
+      font-weight: 500;
+      font-size: 0.95rem;
+      color: #212529 !important;
+    }
+
+    .btn-signup {
+      background-color: #2b64f7;
+      color: #fff;
+      font-weight: 500;
+      padding: 8px 20px;
+      border-radius: 8px;
+      font-size: 0.95rem;
+    }
+
+    .btn-signup:hover {
+      background-color: #1e4ee0;
+    }
+
+    .navbar-toggler {
+      border: none;
+    }
+
+    .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgb(43,100,247)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    }
+
+    .auth-buttons {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    @media (max-width: 991.98px) {
+      .center-nav {
+        justify-content: start !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-white sticky-top py-3">
+    <div class="container d-flex justify-content-between align-items-center">
+      <!-- Left: Logo -->
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="assets/logo.png" alt="Logo">
+      </a>
+
+      <!-- Center: Toggler and Nav -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse center-nav justify-content-center" id="mainNav">
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Products</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Video Hosting</a></li>
+              <li><a class="dropdown-item" href="#">Analytics</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Solutions</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Marketing</a></li>
+              <li><a class="dropdown-item" href="#">Sales</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Resources</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Blog</a></li>
+              <li><a class="dropdown-item" href="#">Help Center</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Right: Auth Buttons -->
+      <div class="auth-buttons d-none d-lg-flex">
+        <a class="nav-link" href="#">Login</a>
+        <a class="btn btn-signup" href="#">Sign Up Free ↗</a>
+      </div>
+    </div>
+  </nav>
+
+
+
+  <footer class="bg-light pt-5 text-dark">
+  <div class="container">
+    <div class="row">
+      <!-- Left column -->
+      <div class="col-lg-5 mb-4">
+        <div class="d-flex align-items-center mb-2">
+          <img src="assets/logo.png" alt="Logo" style="height: 32px; margin-right: 10px; ">
+          <div>
+            
+          </div>
+        </div>
+        <p class="text-muted">
+          Adilo is the premiere video, audio and podcast platform for businesses, organizations, educators and creators.
+        </p>
+
+        <h6 class="mt-4 fw-bold">Newsletter</h6>
+        <p class="text-muted">
+          Be the first one to know about products, offers and events weekly in your mailbox.
+        </p>
+
+        <form class="d-flex bg-white rounded-pill overflow-hidden shadow-sm mb-3" style="max-width: 100%;">
+          <span class="input-group-text border-0 bg-white px-3">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" fill="gray" class="bi bi-envelope" viewBox="0 0 16 16">
+              <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v.217l-8 4.8-8-4.8V4z"/>
+              <path d="M0 5.383l8 4.8 8-4.8V12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V5.383z"/>
+            </svg>
+          </span>
+          <input type="email" class="form-control border-0 shadow-none" placeholder="Enter your email">
+          <button class="btn btn-primary px-4 rounded-0 rounded-end" type="submit">Submit</button>
+        </form>
+
+        <div class="d-flex align-items-center mt-3">
+          <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" fill="white" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+              <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555z"/>
+              <path d="M0 4.697v7.104l5.803-3.803L0 4.697zM6.761 8.83l-6.43 4.224A2 2 0 0 0 2 14h12a2 2 0 0 0 1.67-.946l-6.43-4.224L8 9.586l-1.239-.757zM16 4.697l-5.803 3.801L16 11.801V4.697z"/>
+            </svg>
+          </div>
+          <div class="ms-3">
+            <p class="mb-0 text-muted small">Contact us at</p>
+            <strong class="text-dark">hello@adilo.com</strong>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right column -->
+      <div class="col-lg-3 mb-4">
+        <h6 class="fw-bold mb-3">Products</h6>
+        <ul class="list-unstyled text-muted">
+          <li>Video Hosting</li>
+          <li>Audio Hosting</li>
+          <li>Podcast Hosting</li>
+          <li>Video Player</li>
+          <li>Video, Audio & Screen Recording</li>
+          <li>Snapbyte Studio</li>
+          <li>Teams & Collaborations</li>
+          <li>Advanced Video Security</li>
+          <li>Simulcast Livestreaming</li>
+          <li>Analytics</li>
+        </ul>
+      </div>
+
+      <div class="col-lg-4 mb-4">
+        <h6 class="fw-bold mb-3">Adilo For</h6>
+        <ul class="list-unstyled text-muted">
+          <li>Marketers</li>
+          <li>Online Course Creators</li>
+          <li>Filmmakers</li>
+          <li>Religious Institutions</li>
+          <li>Educators & Schools</li>
+          <li>Collecting Testimonials</li>
+          <li>E-Commerce</li>
+          <li>Corporate Communications</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Footer bottom -->
+    <div class="border-top mt-4 pt-3 pb-2">
+      <div class="d-md-flex justify-content-between align-items-center">
+        <div class="mb-2 small text-muted">
+          ©2024, BigCommand LLC. All Rights Reserved.
+        </div>
+        <ul class="list-inline small text-muted mb-2">
+          <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+          <li class="list-inline-item"><a href="#">Terms & Conditions</a></li>
+          <li class="list-inline-item"><a href="#">Disclaimer</a></li>
+          <li class="list-inline-item"><a href="#">Fairuse Policy</a></li>
+          <li class="list-inline-item"><a href="#">Refund Policy</a></li>
+          <li class="list-inline-item"><a href="#">FAQ</a></li>
+          <li class="list-inline-item"><a href="#">Customer Support</a></li>
+          <li class="list-inline-item"><a href="#">Sitemap</a></li>
+        </ul>
+        <div class="d-flex gap-3">
+          <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" width="20" alt="Facebook"></a>
+          <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" width="20" alt="Instagram"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
