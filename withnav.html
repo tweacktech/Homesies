@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultra-Fast, Professional Video Hosting</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #4338ca;
+            --secondary-color: #6366f1;
+            --light-bg: #f5f5f5;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+            background-color: var(--light-bg);
+        }
+
+        .nav-tabs {
+            border-bottom: none;
+            margin-bottom: 20px;
+        }
+
+        .nav-tabs .nav-link {
+            color: #6b7280;
+            border: none;
+            padding: 10px 15px;
+            margin-right: 10px;
+        }
+
+        .nav-tabs .nav-link.active {
+            background-color: transparent;
+            color: var(--primary-color);
+            font-weight: 600;
+            border-bottom: 2px solid var(--primary-color);
+        }
+
+        .hero-section {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            padding: 50px 0;
+        }
+
+        .hero-content {
+            flex: 1;
+        }
+
+        .hero-content h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .hero-content p {
+            color: #6b7280;
+            margin-bottom: 30px;
+        }
+
+        .feature-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .feature-list li {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .feature-list li::before {
+            content: '✓';
+            color: var(--primary-color);
+            font-weight: bold;
+        }
+
+        .btn-primary {
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+            padding: 12px 24px;
+            font-weight: 600;
+        }
+
+        .btn-primary:hover {
+            background-color: var(--secondary-color);
+            border-color: var(--secondary-color);
+        }
+
+        .screenshot {
+            max-width: 100%;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            border-radius: 10px;
+        }
+
+        .dropdown-menu {
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Tabs -->
+        <ul class="nav nav-tabs" id="myTabs">
+            <li class="nav-item">
+                <a class="nav-link active" href="#">Hosting</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Player</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Recording</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Podcasts</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Monetization</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Embedding</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Analytics</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Security</a>
+            </li>
+        </ul>
+
+        <!-- Hero Section -->
+        <div class="hero-section">
+            <div class="hero-content">
+                <h1>Ultra-Fast, Professional Video Hosting</h1>
+                <p>The speed you need. The security you demand. The control you deserve.</p>
+                
+                <ul class="feature-list">
+                    <li>Adds deliver blazing-fast streaming - crystal-clear 4K quality</li>
+                    <li>Flawless Playback - Instant, buffer-free streaming powered by a CDN</li>
+                    <li>Effortless Organization - Manage your entire video library from one intuitive dashboard</li>
+                    <li>Enterprise-Grade Reliability - Secure, self-host video with privacy controls</li>
+                </ul>
+
+                <button class="btn btn-primary mt-3">Start Hosting For Free</button>
+            </div>
+
+            <div class="hero-image">
+                <img src="/api/placeholder/600/400" alt="Video Hosting Dashboard" class="screenshot">
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS (optional, for dropdown functionality) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
