@@ -24,7 +24,7 @@
 
         .hero-section {
             padding: 4rem 0;
-            background-color: #f8f9fa;
+            background-color: #89B2FF4D;
             position: relative;
         }
 
@@ -156,27 +156,24 @@
 }
 
 .bg-video {
- 
   position: absolute;
-/*   width: 80%; */
   height: auto;
   object-fit: cover;
-  border-radius: 10px;
-/*   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); */
+  border-radius: 3px;
   transition: transform 0.3s ease;
 }
 
 /* Top image (skateboarder) */
 .bg-video.top {
-  top: 10px;
-  left:0.0px;
+  top: 80px;
+  left:40.0px;
   z-index: 3;
 }
 
 /* Bottom image (dancers) */
 .bg-video.bottom {
   top: 210px;
-  left: 190px;
+  left: 240px;
   z-index: 1;
 }
 
@@ -192,56 +189,67 @@
 
 .feature-badge {
   padding: 8px 14px;
-  border-radius: 20px;
+  border-radius: 5px;
   font-size: 0.9rem;
   font-weight: 500;
   color: white;
 }
 
-.feature-badge.clean-audio {
-  top: 10px;
-  left: 30px;
-  background-color: #c084fc;
+.clean-audio {
+  background-color: #F0ACFB;
+    width: 20%;
+    height: 34px;
+    margin-left: 85px;
+    margin-bottom: 0xp;
+    padding: 8px 14px;
+  border-radius: 5px;
+    box-shadow: 0 8px 20px rgba(255,255,255,0.2); 
+    
 }
 
 .feature-badge.storage {
-  top: 40px;
-  right: 10px;
-  background-color: #b3c7ff;
+  top: 60px;
+  height: 100px;
+  right: 115px;
+  background-color: #D0DCFF;
   color: #000;
 }
 
 .feature-badge.podcast {
-  top: 140px;
-  right: 30px;
-  background-color: #b2f5ea;
+  top: 170px;
+  right: 50px;
+    height: 100px;
+    padding: 10px;
+  background-color: #91F7AC;
   color: #1c4532;
 }
 
 .feature-badge.recorder {
   top: 260px;
-  left: 30px;
-  background-color: #22c55e;
+  left: -1px;
+    border-radius:15px;
+  background-color: #55FF55;
   color: #000;
 }
 
 .feature-badge.streaming {
-  bottom: 140px;
-  left: 45%;
-  background-color: #fde047;
+  bottom: 90px;
+  left: 56%;
+  width: 90px;
+  background-color: #FFDD55;
   color: #000;
 }
 
 .feature-badge.interactive {
-  bottom: 30px;
-  left: 55%;
+  bottom: -5px;
+  left: 70%;
   background-color: #fda4af;
   color: #000;
 }
 
 .resolution-badges {
-  top: 30px;
-  left: 45%;
+  top: 70px;
+  left: 20%;
   transform: translateX(-50%);
   display: flex;
   gap: 10px;
@@ -258,14 +266,14 @@
 
 .edit-btn {
   bottom: 45%;
-  left: 50%;
+  left: 20%;
   transform: translateX(-50%);
 }
 
 .control-btn {
   width: 40px;
   height: 40px;
-  border-radius: 50%;
+  border-radius: 20%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -274,13 +282,13 @@
 }
 
 .edit-panel {
-  bottom: 100px;
-  left: 20px;
+  bottom: 5px;
+  left:100px;
   background: white;
   padding: 15px;
   border-radius: 12px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-  width: 260px;
+  width: 200px;
 }
 
 .screen{
@@ -319,15 +327,16 @@
 }
 
 .player-controls {
-  right: 30px;
+  right: 100px;
   bottom: 20px;
   background-color: white;
   padding: 10px 15px;
   border: 1px solid #ccc;
-  border-radius: 12px;
+  border-radius: 10px;
   display: flex;
   gap: 12px;
   align-items: center;
+    height: 60px
 }
 
 .control-icon {
@@ -336,123 +345,6 @@
   color: #444;
 }
 
-        
-        
-        /* 
-        .features-container {
-            position: relative;
-            border: 2px solid black;
-        }
-
-        .feature-badge {
-            background-color: #e9f9f0;
-            color: #10b981;
-            font-size: 0.85rem;
-            padding: 0.5rem 1rem;
-            border-radius: 30px;
-            display: inline-flex;
-            align-items: center;
-            gap: 6px;
-            position: absolute;
-            z-index: 2;
-        }
-
-        .feature-badge.recorder {
-            left: 50px;
-            top: 60%;
-        }
-
-        .feature-badge.clean-audio {
-            right: 40px;
-            top: 10%;
-        }
-
-        .feature-badge.podcast {
-            right: 20px;
-            top: 40%;
-        }
-
-        .feature-badge.storage {
-            right: 10%;
-            top: 20%;
-        }
-
-        .feature-badge.streaming {
-            right: 15%;
-            bottom: 20%;
-        }
-
-        .feature-badge.interactive {
-            right: 25%;
-            bottom: 10%;
-        }
-
-        .resolution-badge {
-            background-color: var(--primary-color);
-            color: white;
-            padding: 0.5rem 1rem;
-            border-radius: 8px;
-            margin-right: 10px;
-        }
-
-        .video-preview {
-            position: relative;
-            border-radius: 12px;
-            overflow: hidden;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-        }
-
-        .video-controls {
-            position: absolute;
-            bottom: 20px;
-            left: 0;
-            right: 0;
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-        }
-
-        .control-btn {
-            background-color: rgba(255, 255, 255, 0.9);
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            cursor: pointer;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        }
-
-
-        .color-palette {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            margin-top: 10px;
-        }
-
-        .color-swatch {
-            width: 30px;
-            height: 30px;
-            border-radius: 50%;
-            cursor: pointer;
-        }
-        /* Responsive adjustments */
-        /* @media (max-width: 992px) {
-            .feature-badge {
-                display: none;
-            }
-
-            .edit-panel,
-            .player-controls {
-                position: static;
-                margin: 20px auto;
-                width: 100%;
-            }
-
-            
-        } */
     </style>
 </head>
 
@@ -514,8 +406,16 @@
                     </div>
                 </div>
                 <div class="col-lg-7 ">
+                    
+
                     <div class="features-container">
-                         <div class="feature-badge clean-audio">🎵 Clean Audio</div>
+                         <div class="clean-audio">🎵 Clean Audio</div><br>
+                         <div class="resolution-badges">
+                            <span class="resolution-badge">2160p 
+                                <span class="resolution-badge" style="background:white;color:black;">4K</span>
+                            </span>
+                            
+                        </div>
                         <!-- Background Layer with 2 Video Images -->
                         <div class="background-layer">
                             <img src="assets/slite.png" alt="Top Background" class="bg-video top">
@@ -525,17 +425,14 @@
 
                         <!-- Feature Badges (on top) -->
                        
-                        <div class="feature-badge storage">📦 Unlimited Storage</div>
-                        <div class="feature-badge podcast">🎙️ Podcast Suite</div>
+                        <div class="feature-badge storage">📦 <br>Unlimited <br>Storage</div>
+                        <div class="feature-badge podcast">🎙️ <br>Podcast <br>Suite</div>
                         <div class="feature-badge recorder">📹 Recorder</div>
-                        <div class="feature-badge streaming">📺 OTT Streaming</div>
-                        <div class="feature-badge interactive">🧠 Interactive Videos</div>
+                        <div class="feature-badge streaming">📺 <br>OTT <br>Streaming</div>
+                        <div class="feature-badge interactive">🧠 <br>Interactive <br>Videos</div>
 
                         <!-- Resolution and Edit Icon -->
-                        <div class="resolution-badges">
-                            <span class="resolution-badge">2160p</span>
-                            <span class="resolution-badge">4K</span>
-                        </div>
+                       
                         <div class="edit-btn">
                             <div class="control-btn" style="background-color: #ff5733;">
                                 <i class="fas fa-cut" style="color: white;"></i>
@@ -562,6 +459,7 @@
                                 <div class="color-swatch" style="background-color: #4caf50;"></div>
                                 <div class="color-swatch" style="background-color: #2196f3;"></div>
                                 <div class="color-swatch" style="background-color: #673ab7;"></div>
+                                <div class="color-swatch" style="background-color: rgb(41, 1, 70);"></div>
                                 <div class="color-swatch" style="background-color: #e91e63;"></div>
                                 <div class="color-swatch" style="background-color: #ff4081;"></div>
                             </div>
