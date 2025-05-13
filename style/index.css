@@ -1,0 +1,115 @@
+.logo1-1-icon {
+  width: 121px;
+  position: relative;
+  height: 34px;
+  object-fit: cover;
+}
+.products {
+  position: relative;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+.mingcutedown-line-icon {
+  width: 17px;
+  position: relative;
+  height: 17px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.products-parent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 3px;
+}
+.pricing-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.frame-group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 50px;
+}
+.frame-child {
+  width: 7.8px;
+  position: relative;
+  height: 7.8px;
+  object-fit: contain;
+}
+.sign-up-free-parent {
+  width: 160px;
+  box-shadow: 5px 4px 13.5px rgba(70, 82, 208, 0.38);
+  border-radius: 8px;
+  background-color: #2358de;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  color: #fff;
+}
+.login-parent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 33px;
+}
+.frame-parent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 165px;
+}
+.logo1-1-parent {
+  width: 1328px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 322px;
+}
+.navbar-header {
+  width: 100%;
+  position: relative;
+  box-shadow: 0px 4px 36.4px rgba(0, 0, 0, 0.04);
+  background-color: #fff;
+  height: 84px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 56px;
+  box-sizing: border-box;
+  text-align: left;
+  font-size: 16px;
+  color: #000;
+  font-family: Inter;
+}
+
+.without-limits {
+  font-weight: 800;
+  background: linear-gradient(140.35deg, #3a01ff, #4ba9fe);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.unleash-the-power-container {
+  width: 503px;
+  position: relative;
+  font-size: 56.63px;
+  letter-spacing: -0.02em;
+  line-height: 63.16px;
+  text-align: left;
+  display: inline-block;
+  color: #000;
+  font-family: Inter;
+}
+
