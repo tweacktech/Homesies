@@ -1,3 +1,24 @@
+/* Mobile styles (default) */
+body {
+  font-size: 1rem;
+  padding: 1rem;
+}
+
+/* Tablets and up */
+@media (min-width: 768px) {
+  body {
+    font-size: 1.1rem;
+  }
+}
+
+/* Desktops and up */
+@media (min-width: 1024px) {
+  body {
+    font-size: 1.2rem;
+  }
+}
+
+
 .main-landing-page,
 .main-landing-page * {
   box-sizing: border-box;
