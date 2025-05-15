@@ -1,7 +1,7 @@
 /* Mobile styles (default) */
 body {
   font-size: 1rem;
-  padding: 1rem;
+  /* padding: 1rem; */
 }
 
 /* Tablets and up */
@@ -17,8 +17,6 @@ body {
     font-size: 1.2rem;
   }
 }
-
-
 .main-landing-page,
 .main-landing-page * {
   box-sizing: border-box;
@@ -584,8 +582,7 @@ body {
 .arrow-1 {
   flex-shrink: 0;
   width: 11px;
-  height: 0px;
-  color: #ffffff;
+  height: auto;
   position: relative;
   overflow: visible;
 }

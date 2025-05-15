@@ -1,0 +1,141 @@
+/* Responsive styles */
+@media screen and (max-width: 1200px) {
+  .main-landing-page {
+    width: 100%;
+    overflow-x: hidden;
+  }
+  
+  .ellipse-7 {
+    width: 70vw;
+    height: 70vw;
+  }
+  
+  .group {
+    width: 40%;
+    right: 60%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .ellipse-7 {
+    width: 80vw;
+    height: 80vw;
+    left: -20%;
+  }
+  
+  .group {
+    width: 50%;
+    right: 50%;
+    left: 0;
+  }
+  
+  .rectangle-5517 {
+    height: 80vh;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .ellipse-7 {
+    width: 90vw;
+    height: 90vw;
+    left: -30%;
+  }
+  
+  .group {
+    width: 70%;
+    right: 30%;
+  }
+  
+  .rectangle-5517 {
+    height: 60vh;
+  }
+}
+
+/* Responsive typography */
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    font-size: 12px;
+  }
+}
+
+/* Responsive containers */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 0 15px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 0 10px;
+  }
+}
+
+/* Responsive images */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsive grid system */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(6, 1fr);
+    gap: 15px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+}
+
+/* Responsive flexbox */
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 768px) {
+  .flex {
+    flex-direction: column;
+  }
+}
+
+/* Responsive spacing */
+.section {
+  padding: 60px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .section {
+    padding: 40px 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .section {
+    padding: 30px 0;
+  }
+} 
